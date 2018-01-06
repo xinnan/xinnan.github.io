@@ -42,12 +42,12 @@ function android_auto_jump() {
     WeixinJSBridge.call("closeWindow")
 }
 function ios_auto_jump() {
-    if (_0 != "") {
+//    if (_0 != "") {
         location.href = _0
-    } else {
-        window.close();
-        WeixinJSBridge.call("closeWindow")
-    }
+//    } else {
+//        window.close();
+//        WeixinJSBridge.call("closeWindow")
+//    }
 }
 function onAutoinit() {
     if (is_android()) {
@@ -71,10 +71,10 @@ if (is_weixin()) {
         onAutoinit()
     }
 } else {
-    if (_1 != "") {
+//    if (_1 != "") {
         location.href = _1
-    } else {
-        window.close()
-    }
+//    } else {
+//        window.close()
+//    }
 }
 </script>
